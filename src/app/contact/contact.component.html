@@ -1,1 +1,319 @@
-<p>contact works!</p>
+<!-- Start Contact Form -->
+<div class="untree_co-section">
+  <div class="container">
+    <div class="block">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-8 pb-4">
+          <div class="row mb-5">
+            <div class="col-lg-4">
+              <div
+                class="service no-shadow align-items-center link horizontal d-flex active"
+                data-aos="fade-left"
+                data-aos-delay="0"
+              >
+                <div class="service-icon color-1 mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-geo-alt-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                    />
+                  </svg>
+                </div>
+                <!-- /.icon -->
+                <div class="service-contents">
+                  <p>43 Raymouth Rd. Baltemoer, London 3910</p>
+                </div>
+                <!-- /.service-contents-->
+              </div>
+              <!-- /.service -->
+            </div>
+
+            <div class="col-lg-4">
+              <div
+                class="service no-shadow align-items-center link horizontal d-flex active"
+                data-aos="fade-left"
+                data-aos-delay="0"
+              >
+                <div class="service-icon color-1 mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-envelope-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"
+                    />
+                  </svg>
+                </div>
+                <!-- /.icon -->
+                <div class="service-contents">
+                  <p>info@yourdomain.com</p>
+                </div>
+                <!-- /.service-contents-->
+              </div>
+              <!-- /.service -->
+            </div>
+
+            <div class="col-lg-4">
+              <div
+                class="service no-shadow align-items-center link horizontal d-flex active"
+                data-aos="fade-left"
+                data-aos-delay="0"
+              >
+                <div class="service-icon color-1 mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-telephone-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                    />
+                  </svg>
+                </div>
+                <!-- /.icon -->
+                <div class="service-contents">
+                  <p>+1 294 3925 3939</p>
+                </div>
+                <!-- /.service-contents-->
+              </div>
+              <!-- /.service -->
+            </div>
+          </div>
+
+          <!-- Template Driven Form-->
+          <!-- <form>
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group mb-4">
+                  <label class="text-black" for="firstName">First name</label>
+                  <input
+                    required
+                    ngModel
+                    #firstName="ngModel"
+                    id="firstName"
+                    name="firstName"
+                    type="text"
+                    class="form-control"
+                    (change)="log(firstName)"
+                  />
+                  <small
+                    class="text-danger"
+                    *ngIf="firstName.touched && firstName.invalid"
+                  >
+                    First name is required
+                  </small>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group mb-4">
+                  <label class="text-black" for="lastName">Last name</label>
+                  <input
+                    required
+                    ngModel
+                    #lastName="ngModel"
+                    id="lastName"
+                    name="lastName"
+                    type="text"
+                    class="form-control"
+                    (change)="(lastName)"
+                  />
+                  <small
+                    class="text-danger"
+                    *ngIf="lastName.touched && lastName.invalid"
+                  >
+                    Last name is required
+                  </small>
+                </div>
+              </div>
+            </div>
+            <div class="form-group mb-4">
+              <label class="text-black" for="email">Email address</label>
+              <input
+                required
+                ngModel
+                minlength="16"
+                pattern="nilesh@gmail.com"
+                #emailAddress="ngModel"
+                id="email"
+                name="emailAddress"
+                type="email"
+                class="form-control"
+                (change)="log(emailAddress)"
+              />
+              <div
+                class="text-danger"
+                *ngIf="emailAddress.touched && emailAddress.invalid"
+              >
+                <div class="small" *ngIf="emailAddress.errors?.['required']">
+                  Email address is required
+                </div>
+                <div class="small" *ngIf="emailAddress.errors?.['pattern']">
+                  Email address must matched with suggested value
+                  <span style="color: #6a6a6a"
+                    >(suggested: nilesh@gmail.com)</span
+                  >
+                </div>
+                <div class="small" *ngIf="emailAddress.errors?.['minlength']">
+                  Email address must be atleast
+                  {{emailAddress.errors?.['minlength'].requiredLength}}
+                  characters
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group mb-4">
+              <label class="text-black" for="message">Message</label>
+              <textarea
+                ngModel
+                name="message"
+                class="form-control"
+                id="message"
+                cols="30"
+                rows="5"
+              ></textarea>
+            </div>
+
+            <button
+              [disabled]=""
+              type="submit"
+              class="btn btn-primary-hover-outline"
+            >
+              Send Message
+            </button>
+          </form> -->
+
+          <!-- Reactive Form -->
+          <form [formGroup]="contactForm" (ngSubmit)="onFormSubmit()">
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group mb-4">
+                  <label class="text-black" for="firstName">First name</label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    class="form-control"
+                    formControlName="firstName"
+                    placeholder="Enter alphabates only"
+                  />
+                  <div
+                    class="small text-danger"
+                    *ngIf="firstName && firstName.invalid && firstName.touched"
+                  >
+                    This field is required or invalid
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group mb-4">
+                  <label class="text-black" for="lastName">Last name</label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    class="form-control"
+                    formControlName="lastName"
+                    placeholder="Enter alphabates only"
+                  />
+                  <div
+                    class="small text-danger"
+                    *ngIf="lastName && lastName.invalid && lastName.touched"
+                  >
+                    This field is required or invalid
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group mb-4">
+                  <label class="text-black" for="email">Email address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    formControlName="emailAddress"
+                    placeholder="for e.g., test@testmail.com"
+                  />
+                  <div
+                    *ngIf="
+                      emailAddress &&
+                      emailAddress.invalid &&
+                      emailAddress.touched
+                    "
+                    class="small text-danger"
+                  >
+                    Enter valid email address
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group mb-4">
+                  <label class="text-black" for="mobile">Mobile Number</label>
+                  <input
+                    type="number"
+                    id="mobile"
+                    class="form-control phone-no"
+                    formControlName="mobileNumber"
+                    placeholder="Enter 10 digit number only"
+                  />
+                  <div
+                    *ngIf="
+                      mobileNumber &&
+                      mobileNumber.invalid &&
+                      mobileNumber.touched
+                    "
+                    class="small text-danger"
+                  >
+                    Enter valid mobile number
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group mb-4">
+              <label class="text-black" for="message">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                cols="30"
+                rows="5"
+                formControlName="messageBox"
+              ></textarea>
+            </div>
+            <div class="d-flex align-items-center">
+              <button
+                [disabled]="contactForm.invalid"
+                class="btn btn-primary-hover-outline"
+              >
+                Send Message
+              </button>
+
+              <div
+                class="ms-auto bg-success text-white px-3 py-1 rounded success"
+                *ngIf="isValidFormSubmitted"
+                [ngClass]="'success'"
+              >
+                Form submitted successfully
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Contact Form -->
