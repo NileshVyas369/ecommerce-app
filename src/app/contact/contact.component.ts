@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormControl, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
@@ -6,7 +6,7 @@ import { FormControl, FormBuilder, Validators } from '@angular/forms';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent {
 
   // initializations
   namePattern = "^[a-zA-Z]+[a-zA-Z]+$";
@@ -35,8 +35,6 @@ export class ContactComponent implements OnInit {
     ]),
     messageBox: new FormControl(''),
   })
-  ngOnInit() {
-  }
   // Form Submission
   onFormSubmit() {
     this.isValidFormSubmitted = false;
@@ -50,8 +48,8 @@ export class ContactComponent implements OnInit {
     // this.contactForm.resetForm();
   }
 
-  resetForm() {
-  }
+  // resetForm() {
+  // }
 
   // Getters
   get firstName() {

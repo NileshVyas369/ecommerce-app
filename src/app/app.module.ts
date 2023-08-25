@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 import { CartComponent } from './cart/cart.component';
+import { BannerComponent } from './banner/banner.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import { CartComponent } from './cart/cart.component';
     HomeComponent,
     NotfoundComponent,
     BlogDetailComponent,
-    CartComponent
+    CartComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
