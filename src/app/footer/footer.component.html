@@ -111,7 +111,10 @@
         <div class="row g-5 mb-5">
             <div class="col-lg-4">
                 <div class="mb-4 footer-logo-wrap">
-                    <a routerLink="home" class="footer-logo"
+                    <a
+                        [ngxScrollTo]="'scrolltoHeader'"
+                        routerLink="home"
+                        class="footer-logo"
                         >Furni<span>.</span></a
                     >
                 </div>
@@ -147,35 +150,119 @@
                 <div class="row links-wrap">
                     <div class="col-6 col-sm-6 col-md-3">
                         <ul class="list-unstyled">
-                            <li><a routerLink="about">About us</a></li>
-                            <li><a routerLink="services">Services</a></li>
-                            <li><a routerLink="blog">Blog</a></li>
-                            <li><a routerLink="contact">Contact us</a></li>
+                            <li>
+                                <a
+                                    [ngxScrollTo]="'scrolltoHeader'"
+                                    routerLink="about"
+                                    >About us</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    [ngxScrollTo]="'scrolltoHeader'"
+                                    routerLink="services"
+                                    >Services</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    [ngxScrollTo]="'scrolltoHeader'"
+                                    routerLink="blog"
+                                    >Blog</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    [ngxScrollTo]="'scrolltoHeader'"
+                                    routerLink="contact"
+                                    >Contact us</a
+                                >
+                            </li>
                         </ul>
                     </div>
 
                     <div class="col-6 col-sm-6 col-md-3">
                         <ul class="list-unstyled">
-                            <li><a routerLink="">Support</a></li>
-                            <li><a routerLink="">Knowledge base</a></li>
-                            <li><a routerLink="">Live chat</a></li>
+                            <li>
+                                <a
+                                    [ngxScrollTo]="'scrolltoHeader'"
+                                    routerLink=""
+                                    >Support</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    [ngxScrollTo]="'scrolltoHeader'"
+                                    routerLink=""
+                                    >Knowledge base</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    [ngxScrollTo]="'scrolltoHeader'"
+                                    routerLink=""
+                                    >Live chat</a
+                                >
+                            </li>
                         </ul>
                     </div>
 
                     <div class="col-6 col-sm-6 col-md-3">
                         <ul class="list-unstyled">
-                            <li><a routerLink="">Jobs</a></li>
-                            <li><a routerLink="">Our team</a></li>
-                            <li><a routerLink="">Leadership</a></li>
-                            <li><a routerLink="">Privacy Policy</a></li>
+                            <li>
+                                <a
+                                    [ngxScrollTo]="'scrolltoHeader'"
+                                    routerLink=""
+                                    >Jobs</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    [ngxScrollTo]="'scrolltoHeader'"
+                                    routerLink=""
+                                    >Our team</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    [ngxScrollTo]="'scrolltoHeader'"
+                                    routerLink=""
+                                    >Leadership</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    [ngxScrollTo]="'scrolltoHeader'"
+                                    routerLink=""
+                                    >Privacy Policy</a
+                                >
+                            </li>
                         </ul>
                     </div>
 
                     <div class="col-6 col-sm-6 col-md-3">
                         <ul class="list-unstyled">
-                            <li><a routerLink="">Nordic Chair</a></li>
-                            <li><a routerLink="">Kruzo Aero</a></li>
-                            <li><a routerLink="">Ergonomic Chair</a></li>
+                            <li>
+                                <a
+                                    [ngxScrollTo]="'scrolltoHeader'"
+                                    routerLink=""
+                                    >Nordic Chair</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    [ngxScrollTo]="'scrolltoHeader'"
+                                    routerLink=""
+                                    >Kruzo Aero</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    [ngxScrollTo]="'scrolltoHeader'"
+                                    routerLink=""
+                                    >Ergonomic Chair</a
+                                >
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -193,10 +280,14 @@
                 <div class="col-lg-6 text-center text-lg-end">
                     <ul class="list-unstyled d-inline-flex ms-auto">
                         <li class="me-4">
-                            <a routerLink="">Terms &amp; Conditions</a>
+                            <a routerLink="" [ngxScrollTo]="'scrolltoHeader'"
+                                >Terms &amp; Conditions</a
+                            >
                         </li>
                         <li>
-                            <a routerLink="">Privacy Policy</a>
+                            <a routerLink="" [ngxScrollTo]="'scrolltoHeader'"
+                                >Privacy Policy</a
+                            >
                         </li>
                     </ul>
                 </div>
@@ -205,6 +296,3 @@
     </div>
 </footer>
 <!-- End Footer Section -->
-<script src=".../../../../assets/js/bootstrap.bundle.min.js"></script>
-<script src=".../../../../assets/js/tiny-slider.js"></script>
-<script src=".../../../../assets/js/custom.js"></script>
