@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { POSTS } from 'src/app/blogs';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 
 export class HomeComponent {
+  post: any;
+  posts = POSTS;
 }

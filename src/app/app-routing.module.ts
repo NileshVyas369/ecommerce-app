@@ -11,16 +11,76 @@ import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'shop', component: ShopComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'blog/:id', component: BlogDetailComponent },
-  { path: 'blog', component: BlogComponent },
-  { path: 'services', component: ServicesComponent },
-  { path: 'cart', component: CartComponent },
-  { path: '**', component: NotfoundComponent },
+  {
+    path: '',
+    component: HomeComponent,
+    data: {
+      title: 'Home | Furni.'
+    }
+  },
+  {
+    path: 'home',
+    component: HomeComponent,
+    data: {
+      title: 'Home | Furni.'
+    }
+  },
+  {
+    path: 'about',
+    component: AboutComponent,
+    data: {
+      title: 'About | Furni.'
+    }
+  },
+  {
+    path: 'shop',
+    component: ShopComponent,
+    data: {
+      title: 'Shop | Furni.'
+    }
+  },
+  {
+    path: 'contact',
+    component: ContactComponent,
+    data: {
+      title: 'Contact | Furni.'
+    }
+  },
+  {
+    path: 'blog/:id',
+    component: BlogDetailComponent,
+    data: {
+      title: 'Blog Detail | Furni.'
+    }
+  },
+  {
+    path: 'blog',
+    component: BlogComponent,
+    data: {
+      title: 'Blog | Furni.'
+    }
+  },
+  {
+    path: 'services',
+    component: ServicesComponent,
+    data: {
+      title: 'Services | Furni.'
+    }
+  },
+  {
+    path: 'cart',
+    component: CartComponent,
+    data: {
+      title: 'Cart | Furni.'
+    }
+  },
+  {
+    path: '**',
+    component: NotfoundComponent,
+    data: {
+      title: '404 - Not Found | Furni.'
+    }
+  },
 ];
 
 @NgModule({

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -41,7 +41,9 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
     ReactiveFormsModule,
     ScrollToModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    Title
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
